@@ -1,1 +1,1 @@
-# Kurts Kartei Kärtchen
+# Kurts Karteikärtchen
