@@ -13,6 +13,7 @@ public interface DBModes <T> {
 
     public void Delete(String SQLQuery);
 
-    public void Update(String SQLQuery);
+    public void databaseupdaterichtigfalsch(String update, Boolean value1);
+
 
 }

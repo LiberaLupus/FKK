@@ -91,13 +91,31 @@ public class DBManager implements DBModes{
 
     @Override
     public void Delete(String SQLQuery) {
+        try {
+            PreparedStatement stmt = connection.conn.prepareStatement(SQLQuery);
+            stmt.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
     @Override
-    public void Update(String SQLQuery) {
-
+    public void databaseupdaterichtigfalsch(String update, Boolean value1) {
+        try {
+            PreparedStatement stmt = connection.conn
+                    .prepareStatement(update);
+            try {
+                stmt.setBoolean(1, value1);
+                stmt.execute();
+                System.out.println("Data is inserted 1");
+                stmt.close();
+            } catch (SQLException e1) {
+            }
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
     }
-
 
 }

@@ -10,16 +10,5 @@ public class MessageBox {
                 ausgabe,
                 "",
                 JOptionPane.DEFAULT_OPTION);
-
-        int eingabe = JOptionPane.showConfirmDialog(null,
-                "Möchten Sie sich auslogen?",
-                "",
-                JOptionPane.YES_NO_OPTION);
-        System.out.println(eingabe);
-        if (eingabe == 0){
-
-        }else{
-
-        }
     }
 }

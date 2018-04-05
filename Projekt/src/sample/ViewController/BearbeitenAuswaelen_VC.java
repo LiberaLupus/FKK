@@ -26,7 +26,7 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
     ImageView backgroundImage;
 
     @FXML
-    Button btnAnzeigen, btnErstellen, btnBearbeiten, btnAbbrechen, btnLoeschen;
+    Button btnErstellen, btnBearbeiten, btnAbbrechen, btnLoeschen;
 
     @FXML
     ComboBox CBKarteien;
@@ -44,7 +44,7 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
 
 
     @FXML
-    private void btnAnzeigenOA(javafx.event.ActionEvent event) throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
+    private void Anzeigen() throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
         setKarteienID(String.valueOf(CBKarteien.getValue()));
         ObservableList<Karten> data = FXCollections.observableArrayList();
         TVFrageAntwort.getItems().clear();
@@ -70,23 +70,37 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
     @FXML
     private void btnErstellenOA(javafx.event.ActionEvent event){
         Seitenwechsel sceneload = new Seitenwechsel();
-        sceneload.wechsel("Erstellen", btnAnzeigen, mainAnchor.getHeight(),  mainAnchor.getWidth());
+        sceneload.wechsel("Erstellen", btnErstellen, mainAnchor.getHeight(),  mainAnchor.getWidth());
     }
 
     @FXML
     private void btnBearbeitenOA(javafx.event.ActionEvent event){
         Seitenwechsel sceneload = new Seitenwechsel();
-        sceneload.wechsel("BearbeitenBearbeiten", btnAnzeigen, mainAnchor.getHeight(),  mainAnchor.getWidth());
+        sceneload.wechsel("BearbeitenBearbeiten", btnErstellen, mainAnchor.getHeight(),  mainAnchor.getWidth());
     }
 
     @FXML
     private void btnAbbrechenOA(javafx.event.ActionEvent event){
         Seitenwechsel sceneload = new Seitenwechsel();
-        sceneload.wechsel("Menu", btnAnzeigen, mainAnchor.getHeight(),  mainAnchor.getWidth());
+        sceneload.wechsel("Menu", btnErstellen, mainAnchor.getHeight(),  mainAnchor.getWidth());
     }
 
     @FXML
     private void btnLoeschenOA(javafx.event.ActionEvent event){
+        try {
+            DBManager DBHelper = new DBManager();
+            DBHelper.Delete("delete from karteien where id = "+ getKarteienID() +";");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+        Seitenwechsel sceneload = new Seitenwechsel();
+        sceneload.wechsel("BearbeitenAuswaelen", btnErstellen, mainAnchor.getHeight(),  mainAnchor.getWidth());
 
     }
 
@@ -96,7 +110,6 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
     public void initialize() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         this.mainAnchor.widthProperty().addListener(((observable, oldValue, newValue) -> {
             this.backgroundImage.setFitWidth((Double) newValue);
-            this.btnAnzeigen.setPrefWidth((Double) newValue * 0.093);
             this.btnErstellen.setPrefWidth((Double) newValue * 0.093);
             this.btnBearbeiten.setPrefWidth((Double) newValue * 0.093);
             this.btnAbbrechen.setPrefWidth((Double) newValue * 0.093);
@@ -108,8 +121,6 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
         }));
         this.mainAnchor.heightProperty().addListener(((observable, oldValue, newValue) -> {
             this.backgroundImage.setFitHeight((Double) newValue - 32);
-            this.btnAnzeigen.setPrefHeight((Double) newValue * 0.0516);
-            this.btnAnzeigen.setFont(Font.font ("System", (Double) newValue * 0.025));
             this.btnErstellen.setPrefHeight((Double) newValue * 0.0516);
             this.btnErstellen.setFont(Font.font ("System", (Double) newValue * 0.025));
             this.btnBearbeiten.setPrefHeight((Double) newValue * 0.0516);
@@ -123,6 +134,25 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
             System.out.println("height: " + newValue);
         }));
 
+        btnBearbeiten.disableProperty().setValue(true);
+        btnLoeschen.disableProperty().setValue(true);
+
+        this.CBKarteien.valueProperty().addListener(((observable, oldValue, newValue) -> {
+            try {
+                Anzeigen();
+                btnBearbeiten.disableProperty().setValue(false);
+                btnLoeschen.disableProperty().setValue(false);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }));
+
         CBKarteien.setTooltip(new Tooltip("Wähle eine Kartei aus."));
         try {
             comboboxanzeige();
@@ -132,7 +162,6 @@ public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
     }
 
     public void comboboxanzeige() throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
-        //cbxauswahl.setValue("");
         DBManager DBHelper = new DBManager();
         CBKarteien.getItems().removeAll();
         List<String> kaname = DBHelper.Select02("select * from karteien","Name");

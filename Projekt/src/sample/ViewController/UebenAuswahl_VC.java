@@ -1,17 +1,19 @@
 package sample.ViewController;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
+import sample.AbstractClasses.IDHelper;
+import sample.Functions.DBManager;
 import sample.Functions.Seitenwechsel;
 import sample.Interfaces.VC_Standard;
 
-public class UebenAuswahl_VC implements VC_Standard {
+import java.sql.SQLException;
+import java.util.List;
+
+public class UebenAuswahl_VC extends IDHelper implements VC_Standard {
 
     @FXML
     AnchorPane mainAnchor;
@@ -66,5 +68,38 @@ public class UebenAuswahl_VC implements VC_Standard {
             this.LbSelect.setFont(Font.font ("System", (Double) newValue * 0.0375));
             System.out.println("height: " + newValue);
         }));
+
+        btnStart.disableProperty().setValue(true);
+
+        this.CBKartei.valueProperty().addListener(((observable, oldValue, newValue) -> {
+            try {
+                setKarteienID(String.valueOf(CBKartei.getValue()));
+                btnStart.disableProperty().setValue(false);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }));
+
+        CBKartei.setTooltip(new Tooltip("Wähle eine Kartei aus."));
+        try {
+            comboboxanzeige();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void comboboxanzeige() throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
+        DBManager DBHelper = new DBManager();
+        CBKartei.getItems().removeAll();
+        List<String> kaname = DBHelper.Select02("select * from karteien","Name");
+        for (String element : kaname) {
+            CBKartei.getItems().add(element);
+        }
     }
 }
