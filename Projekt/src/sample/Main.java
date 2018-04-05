@@ -13,7 +13,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("FXML/Menu.fxml"));
         primaryStage.setTitle("KKK");
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setMinHeight(647);
+        primaryStage.setMinWidth(1018);
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }
 

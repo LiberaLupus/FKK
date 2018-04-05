@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewController.Start_VC">
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewController.Start_VC">
    <children>
-      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar minHeight="-Infinity" minWidth="-Infinity" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -34,7 +34,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+      <GridPane minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
@@ -49,7 +49,7 @@
             </ImageView>
          </children>
       </GridPane>
-      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+      <GridPane minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="200.0" />
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="200.0" />
@@ -69,9 +69,9 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Button fx:id="btnBearbeiten" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" text="Bearbeiten" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button fx:id="btnBeenden" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" text="Beenden" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button fx:id="btnUeben" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" text="Üben" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnBearbeiten" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" onAction="#btnBearbeitenOA" text="Bearbeiten" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnBeenden" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" onAction="#btnBeendenOA" text="Beenden" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnUeben" minHeight="31.0" minWidth="92.0" mnemonicParsing="false" onAction="#btnUebenOA" text="Üben" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
