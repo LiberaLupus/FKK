@@ -7,7 +7,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
-import sample.AbstractClasses.Test;
 import sample.Functions.Seitenwechsel;
 import sample.Interfaces.VC_Standard;
 

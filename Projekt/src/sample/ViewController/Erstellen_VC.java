@@ -5,10 +5,14 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
+import sample.AbstractClasses.IDHelper;
+import sample.Functions.DBManager;
 import sample.Functions.Seitenwechsel;
 import sample.Interfaces.VC_Standard;
 
-public class Erstellen_VC implements VC_Standard {
+import java.sql.SQLException;
+
+public class Erstellen_VC extends IDHelper implements VC_Standard {
 
     @FXML
     AnchorPane mainAnchor;
@@ -32,7 +36,10 @@ public class Erstellen_VC implements VC_Standard {
     }
 
     @FXML
-    private void btnWeiterOA(javafx.event.ActionEvent event) {
+    private void btnWeiterOA(javafx.event.ActionEvent event) throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
+        DBManager DBHelper = new DBManager();
+        DBHelper.Insert1("insert into karteien(Name) Values (?);", TFKarteiname.getText());
+        setKarteienID(TFKarteiname.getText());
         Seitenwechsel sceneload = new Seitenwechsel();
         sceneload.wechsel("BearbeitenBearbeiten",btnAbbrechen, mainAnchor.getHeight(),  mainAnchor.getWidth());
     }

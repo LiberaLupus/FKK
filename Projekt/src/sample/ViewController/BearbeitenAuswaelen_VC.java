@@ -1,14 +1,23 @@
 package sample.ViewController;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
+import sample.AbstractClasses.IDHelper;
+import sample.Functions.DBManager;
+import sample.Functions.Karten;
 import sample.Functions.Seitenwechsel;
 import sample.Interfaces.VC_Standard;
 
-public class BearbeitenAuswaelen_VC implements VC_Standard {
+import java.sql.SQLException;
+import java.util.List;
+
+public class BearbeitenAuswaelen_VC extends IDHelper implements VC_Standard {
 
     @FXML
     AnchorPane mainAnchor;
@@ -31,10 +40,31 @@ public class BearbeitenAuswaelen_VC implements VC_Standard {
     @FXML
     TableColumn TCFrage, TCAntwort;
 
+    private ObservableList<Karten> data = FXCollections.observableArrayList();
+
 
     @FXML
-    private void btnAnzeigenOA(javafx.event.ActionEvent event){
+    private void btnAnzeigenOA(javafx.event.ActionEvent event) throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
+        setKarteienID(String.valueOf(CBKarteien.getValue()));
+        ObservableList<Karten> data = FXCollections.observableArrayList();
+        TVFrageAntwort.getItems().clear();
+        TVFrageAntwort.getSelectionModel().clearSelection();
+        DBManager DBHelper = new DBManager();
+        List<String> listfrage = DBHelper.Select02("select * from karten where KarteienFK =" + getKarteienID() +";", "Frage");
+        List<String> listantwort = DBHelper.Select02("select * from karten where KarteienFK =" + getKarteienID() +";", "Antwort");
+        for (int i = 0 ; listantwort.size() > i; i++) {
+            String frage = listfrage.get(i);
+            String antwort = listantwort.get(i);
+            data.add(new Karten(frage,antwort));
+        }
 
+        TCFrage.setCellValueFactory(
+                new PropertyValueFactory<Karten,String>("tclfrage")
+        );
+        TCAntwort.setCellValueFactory(
+                new PropertyValueFactory<Karten,String>("tclantwort")
+        );
+        TVFrageAntwort.setItems(data);
     }
 
     @FXML
@@ -92,5 +122,22 @@ public class BearbeitenAuswaelen_VC implements VC_Standard {
             this.LbSelect.setFont(Font.font ("System", (Double) newValue * 0.025));
             System.out.println("height: " + newValue);
         }));
+
+        CBKarteien.setTooltip(new Tooltip("Wähle eine Kartei aus."));
+        try {
+            comboboxanzeige();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void comboboxanzeige() throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
+        //cbxauswahl.setValue("");
+        DBManager DBHelper = new DBManager();
+        CBKarteien.getItems().removeAll();
+        List<String> kaname = DBHelper.Select02("select * from karteien","Name");
+        for (String element : kaname) {
+            CBKarteien.getItems().add(element);
+        }
     }
 }
