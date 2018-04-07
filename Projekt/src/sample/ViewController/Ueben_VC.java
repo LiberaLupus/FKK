@@ -11,12 +11,13 @@ import sample.AbstractClasses.IDHelper;
 import sample.Functions.DBManager;
 import sample.Functions.MessageBox;
 import sample.Functions.Seitenwechsel;
+import sample.Interfaces.Ueben;
 import sample.Interfaces.VC_Standard;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public class Ueben_VC extends IDHelper implements VC_Standard {
+public class Ueben_VC extends IDHelper implements VC_Standard, Ueben {
 
     @FXML
     AnchorPane mainAnchor;
@@ -95,7 +96,9 @@ public class Ueben_VC extends IDHelper implements VC_Standard {
         frageausgabe();
     }
 
-    public void frageausgabe(){
+
+    @Override
+    public void frageausgabe() {
         try{
             DBManager DBHelper = new DBManager();
             List<String> listfrage = DBHelper.Select02("select * from karten where KarteienFK =" + getKarteienID() +";", "Frage");
