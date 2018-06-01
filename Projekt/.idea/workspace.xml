@@ -62,277 +62,66 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DBModes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Interfaces/DBModes.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DBConnectionSingleton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Pattern/DBConnectionSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state>
+              <caret line="14" column="98" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ueben.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Interfaces/Ueben.java">
+      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Functions/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ueben_VC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ViewController/Ueben_VC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="476">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
               <folding>
-                <element signature="method#btnAbbrechenOA#0;class#Ueben_VC#0" />
-                <element signature="method#btnPruefenOA#0;class#Ueben_VC#0" />
-                <element signature="method#initialize#0;class#Ueben_VC#0" />
-                <element signature="method#frageausgabe#0;class#Ueben_VC#0" />
+                <element signature="method#Insert1#0;class#DBManager#0" />
+                <element signature="method#Insert2#0;class#DBManager#0" />
+                <element signature="method#Delete#0;class#DBManager#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/sample" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/sample">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>sample</OriginalElement>
-              <nodes>
-                <node x="301.33333333333337" y="952.0">sample.ViewController.BearbeitenBearbeiten_VC</node>
-                <node x="0.0" y="1412.0">sample.JunitTest.MainTest</node>
-                <node x="305.0" y="1412.0">sample.Main</node>
-                <node x="591.3333333333334" y="1018.0">sample.ViewController.Erstellen_VC</node>
-                <node x="1369.2984567901235" y="553.0">sample.Interfaces.Ueben</node>
-                <node x="1246.3333333333335" y="289.0">sample.Functions.Sceneloader</node>
-                <node x="435.86393298059954" y="211.0">sample.Functions.DBManager</node>
-                <node x="594.3639329805995" y="21.0">sample.Pattern.DBConnectionSingleton</node>
-                <node x="799.3698853615521" y="553.0">sample.Interfaces.VC_Standard</node>
-                <node x="242.36393298059943" y="0.0">sample.Interfaces.DBModes</node>
-                <node x="99.81812169312173" y="508.0">sample.Functions.Karten</node>
-                <node x="989.131790123457" y="553.0">sample.Functions.Seitenwechsel</node>
-                <node x="1564.2984567901235" y="553.0">sample.Functions.MessageBox</node>
-                <node x="1136.3333333333335" y="1018.0">sample.ViewController.Start_VC</node>
-                <node x="21.33333333333337" y="919.0">sample.ViewController.BearbeitenAuswaelen_VC</node>
-                <node x="871.3333333333334" y="1018.0">sample.ViewController.UebenAuswahl_VC</node>
-                <node x="1414.3333333333335" y="941.0">sample.ViewController.Ueben_VC</node>
-                <node x="586.7389329805997" y="541.5">sample.AbstractClasses.IDHelper</node>
-                <node x="1027.3333333333335" y="289.0">sample.Functions.BaseController</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="sample.ViewController.BearbeitenBearbeiten_VC" target="sample.AbstractClasses.IDHelper">
-                  <point x="13.5" y="-191.0" />
-                  <point x="449.83333333333337" y="779.0" />
-                  <point x="627.4889329805997" y="779.0" />
-                  <point x="-40.75" y="37.0" />
-                </edge>
-                <edge source="sample.Functions.Seitenwechsel" target="sample.Functions.Sceneloader">
-                  <point x="114.0" y="-25.5" />
-                  <point x="1255.131790123457" y="488.0" />
-                  <point x="1436.0833333333335" y="488.0" />
-                  <point x="63.25" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.Start_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="86.0" y="-125.0" />
-                  <point x="1351.3333333333335" y="889.0" />
-                  <point x="1229.7984567901235" y="889.0" />
-                  <point x="88.66666666666663" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenAuswaelen_VC" target="sample.Functions.DBManager">
-                  <point x="-91.0" y="-224.0" />
-                  <point x="60.33333333333337" y="889.0" />
-                  <point x="37.0" y="889.0" />
-                  <point x="37.0" y="448.0" />
-                  <point x="477.36393298059954" y="448.0" />
-                  <point x="-124.5" y="103.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.Interfaces.Ueben">
-                  <point x="13.0" y="-202.0" />
-                  <point x="1557.3333333333335" y="679.0" />
-                  <point x="1456.2984567901235" y="679.0" />
-                  <point x="0.0" y="25.5" />
-                </edge>
-                <edge source="sample.Functions.DBManager" target="sample.Interfaces.DBModes">
-                  <point x="-110.66666666666674" y="-103.5" />
-                  <point x="491.1972663139328" y="186.0" />
-                  <point x="408.36393298059943" y="186.0" />
-                  <point x="0.0" y="80.5" />
-                </edge>
-                <edge source="sample.ViewController.Erstellen_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="37.14285714285711" y="-125.0" />
-                  <point x="758.4761904761905" y="819.0" />
-                  <point x="860.2032186948854" y="819.0" />
-                  <point x="-12.166666666666629" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.Erstellen_VC" target="sample.Functions.DBManager">
-                  <point x="-74.28571428571422" y="-125.0" />
-                  <point x="647.0476190476192" y="739.0" />
-                  <point x="532.8690476190477" y="739.0" />
-                  <point x="532.8690476190477" y="488.0" />
-                  <point x="588.0305996472663" y="488.0" />
-                  <point x="-13.833333333333258" y="103.5" />
-                </edge>
-                <edge source="sample.AbstractClasses.IDHelper" target="sample.Functions.DBManager">
-                  <point x="40.75" y="-37.0" />
-                  <point x="708.9889329805997" y="488.0" />
-                  <point x="643.3639329805995" y="488.0" />
-                  <point x="41.5" y="103.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenAuswaelen_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="65.0" y="-224.0" />
-                  <point x="216.33333333333337" y="799.0" />
-                  <point x="811.5365520282187" y="799.0" />
-                  <point x="-60.83333333333337" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.Functions.MessageBox">
-                  <point x="65.0" y="-202.0" />
-                  <point x="1609.3333333333335" y="899.0" />
-                  <point x="1618.0484567901235" y="899.0" />
-                  <point x="-53.75" y="25.5" />
-                </edge>
-                <edge source="sample.Functions.Seitenwechsel" target="sample.Functions.BaseController">
-                  <point x="-114.0" y="-25.5" />
-                  <point x="1027.131790123457" y="488.0" />
-                  <point x="1077.0833333333335" y="488.0" />
-                  <point x="-49.75" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.UebenAuswahl_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="-35.0" y="-125.0" />
-                  <point x="958.8333333333334" y="749.0" />
-                  <point x="884.5365520282187" y="749.0" />
-                  <point x="12.166666666666629" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenAuswaelen_VC" target="sample.Functions.Karten">
-                  <point x="-13.0" y="-224.0" />
-                  <point x="138.33333333333337" y="749.0" />
-                  <point x="198.98478835978847" y="749.0" />
-                  <point x="-19.833333333333258" y="70.5" />
-                </edge>
-                <edge source="sample.ViewController.Erstellen_VC" target="sample.AbstractClasses.IDHelper">
-                  <point x="0.0" y="-125.0" />
-                  <point x="721.3333333333334" y="779.0" />
-                  <point x="676.3889329805997" y="779.0" />
-                  <point x="8.150000000000091" y="37.0" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenAuswaelen_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="117.0" y="-224.0" />
-                  <point x="268.33333333333337" y="839.0" />
-                  <point x="1027.131790123457" y="839.0" />
-                  <point x="-114.0" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.UebenAuswahl_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="70.0" y="-125.0" />
-                  <point x="1063.8333333333335" y="889.0" />
-                  <point x="1153.7984567901235" y="889.0" />
-                  <point x="12.666666666666629" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenBearbeiten_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="67.5" y="-191.0" />
-                  <point x="503.83333333333337" y="809.0" />
-                  <point x="835.8698853615521" y="809.0" />
-                  <point x="-36.5" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.Erstellen_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="74.28571428571422" y="-125.0" />
-                  <point x="795.6190476190476" y="869.0" />
-                  <point x="1103.131790123457" y="869.0" />
-                  <point x="-38.0" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.UebenAuswahl_VC" target="sample.Functions.DBManager">
-                  <point x="35.0" y="-125.0" />
-                  <point x="1028.8333333333335" y="809.0" />
-                  <point x="978.6317901234569" y="809.0" />
-                  <point x="978.6317901234569" y="468.0" />
-                  <point x="698.697266313933" y="468.0" />
-                  <point x="96.83333333333348" y="103.5" />
-                </edge>
-                <edge source="sample.ViewController.UebenAuswahl_VC" target="sample.AbstractClasses.IDHelper">
-                  <point x="-105.0" y="-125.0" />
-                  <point x="888.8333333333334" y="769.0" />
-                  <point x="692.6889329805997" y="769.0" />
-                  <point x="24.450000000000045" y="37.0" />
-                </edge>
-                <edge source="sample.ViewController.Start_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="-86.0" y="-125.0" />
-                  <point x="1179.3333333333335" y="739.0" />
-                  <point x="908.8698853615521" y="739.0" />
-                  <point x="36.5" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.AbstractClasses.IDHelper">
-                  <point x="-91.0" y="-202.0" />
-                  <point x="1453.3333333333335" y="719.0" />
-                  <point x="741.5889329805998" y="719.0" />
-                  <point x="73.35000000000014" y="37.0" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenAuswaelen_VC" target="sample.AbstractClasses.IDHelper">
-                  <point x="39.0" y="-224.0" />
-                  <point x="190.33333333333337" y="769.0" />
-                  <point x="611.1889329805997" y="769.0" />
-                  <point x="-57.049999999999955" y="37.0" />
-                </edge>
-                <edge source="sample.Functions.DBManager" target="sample.Pattern.DBConnectionSingleton">
-                  <point x="110.66666666666674" y="-103.5" />
-                  <point x="712.5305996472663" y="186.0" />
-                  <point x="795.3639329805995" y="186.0" />
-                  <point x="67.0" y="59.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenBearbeiten_VC" target="sample.Functions.DBManager">
-                  <point x="-40.5" y="-191.0" />
-                  <point x="395.83333333333337" y="719.0" />
-                  <point x="356.08333333333337" y="719.0" />
-                  <point x="356.08333333333337" y="458.0" />
-                  <point x="505.0305996472663" y="458.0" />
-                  <point x="-96.83333333333326" y="103.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.Functions.DBManager">
-                  <point x="117.0" y="-202.0" />
-                  <point x="1661.3333333333335" y="899.0" />
-                  <point x="1789.7984567901235" y="899.0" />
-                  <point x="1789.7984567901235" y="448.0" />
-                  <point x="754.0305996472663" y="448.0" />
-                  <point x="152.16666666666674" y="103.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.Interfaces.VC_Standard">
-                  <point x="-65.0" y="-202.0" />
-                  <point x="1479.3333333333335" y="709.0" />
-                  <point x="933.2032186948853" y="709.0" />
-                  <point x="60.83333333333326" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenBearbeiten_VC" target="sample.Functions.Karten">
-                  <point x="-94.5" y="-191.0" />
-                  <point x="341.83333333333337" y="739.0" />
-                  <point x="278.3181216931217" y="739.0" />
-                  <point x="59.5" y="70.5" />
-                </edge>
-                <edge source="sample.ViewController.Ueben_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="-13.0" y="-202.0" />
-                  <point x="1531.3333333333335" y="689.0" />
-                  <point x="1280.46512345679" y="689.0" />
-                  <point x="139.33333333333314" y="25.5" />
-                </edge>
-                <edge source="sample.ViewController.BearbeitenBearbeiten_VC" target="sample.Functions.Seitenwechsel">
-                  <point x="94.5" y="-191.0" />
-                  <point x="530.8333333333334" y="849.0" />
-                  <point x="1052.4651234567903" y="849.0" />
-                  <point x="-88.66666666666663" y="25.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="897.047619047617" y="939.6428571428569" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Functions/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sceneloader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Functions/Sceneloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Seitenwechsel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Functions/Seitenwechsel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BearbeitenAuswaelen_VC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/ViewController/BearbeitenAuswaelen_VC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="876">
+              <caret line="109" column="108" selection-start-line="108" selection-start-column="4" selection-end-line="109" selection-end-column="108" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Anzeigen#0;class#BearbeitenAuswaelen_VC#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -433,10 +222,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="365" />
+    <option name="y" value="405" />
     <option name="width" value="1300" />
-    <option name="height" value="876" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -446,8 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -478,7 +266,21 @@
               <item name="Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projekt" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +297,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -744,6 +547,15 @@
       <workItem from="1523098995834" duration="487000" />
       <workItem from="1523099680123" duration="1034000" />
       <workItem from="1523103700752" duration="490000" />
+      <workItem from="1524725583276" duration="30000" />
+      <workItem from="1524735249105" duration="23000" />
+      <workItem from="1525164538366" duration="16000" />
+      <workItem from="1525164886951" duration="9000" />
+      <workItem from="1525286180828" duration="56000" />
+      <workItem from="1525330769008" duration="16000" />
+      <workItem from="1525331034241" duration="105000" />
+      <workItem from="1525337193405" duration="87000" />
+      <workItem from="1525350063536" duration="42000" />
     </task>
     <servers />
   </component>
@@ -762,10 +574,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7775000" />
+    <option name="totallyTimeSpent" value="8159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="10" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -777,19 +590,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31536388" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3162839" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32884097" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.15298508" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.17110874" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24973147" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973147" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39870688" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32672232" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -836,7 +649,6 @@
         <state relative-caret-position="102">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <element signature="method#Select02#0;class#DBManager#0" />
             <element signature="method#Insert1#0;class#DBManager#0" />
             <element signature="method#Insert2#0;class#DBManager#0" />
             <element signature="method#Delete#0;class#DBManager#0" />
@@ -849,6 +661,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Anzeigen#0;class#BearbeitenAuswaelen_VC#0" />
           </folding>
         </state>
@@ -885,25 +698,11 @@
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/Erstellen_VCTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/Start_VCTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/UebenAuswahl_VCTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/UebenAuswahl_VC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/Ueben_VCTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/ViewController/Start_VC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Functions/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -926,28 +725,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/SceneloaderTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Functions/Sceneloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/MessageBoxTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Functions/MessageBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Functions/Seitenwechsel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/SeitenwechselTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/BaseControllerTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/JunitTest/test.puml" />
@@ -1018,36 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Functions/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="method#Select02#0;class#DBManager#0" />
-            <element signature="method#Insert1#0;class#DBManager#0" />
-            <element signature="method#Insert2#0;class#DBManager#0" />
-            <element signature="method#Delete#0;class#DBManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Pattern/DBConnectionSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/BearbeitenAuswaelen_VC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="method#Anzeigen#0;class#BearbeitenAuswaelen_VC#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,26 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interfaces/Ueben.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/Ueben_VC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="method#btnAbbrechenOA#0;class#Ueben_VC#0" />
-            <element signature="method#btnPruefenOA#0;class#Ueben_VC#0" />
-            <element signature="method#initialize#0;class#Ueben_VC#0" />
-            <element signature="method#frageausgabe#0;class#Ueben_VC#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1421,7 +1149,7 @@
               <point x="-88.66666666666663" y="25.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="897.047619047617" y="939.6428571428569" />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="897.0" y="940.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1432,6 +1160,90 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Pattern/DBConnectionSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="98" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Functions/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="method#Insert1#0;class#DBManager#0" />
+            <element signature="method#Insert2#0;class#DBManager#0" />
+            <element signature="method#Delete#0;class#DBManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Functions/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Functions/Sceneloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Functions/Seitenwechsel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/UebenAuswahl_VC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="8" selection-end-line="102" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/Ueben_VC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="103" column="36" lean-forward="true" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="36" />
+          <folding>
+            <element signature="method#btnAbbrechenOA#0;class#Ueben_VC#0" />
+            <element signature="method#btnPruefenOA#0;class#Ueben_VC#0" />
+            <element signature="method#initialize#0;class#Ueben_VC#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interfaces/Ueben.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Functions/MessageBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ViewController/BearbeitenAuswaelen_VC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="109" column="108" selection-start-line="108" selection-start-column="4" selection-end-line="109" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Anzeigen#0;class#BearbeitenAuswaelen_VC#0" />
+          </folding>
         </state>
       </provider>
     </entry>
