@@ -1,4 +1,4 @@
-# Kurts Karteikärtchen
+# Fabians Karteikärtchen
 
 -Dokumentation-
 Projektbeschrieb vorhanden korrekt und sinngemäss
